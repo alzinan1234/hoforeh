@@ -16,7 +16,7 @@ export default function Contact() {
           </div>
         </div>
 
-        <div className="flex justify-center items-stretch">
+        <div className="flex justify-center items-stretch"> 
           <div className="grid md:grid-cols-2 gap-10">
             {/* Contact Details */}
             <div className="h-full pr-6">

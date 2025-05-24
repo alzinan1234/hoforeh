@@ -14,17 +14,29 @@ export default function Navbar() {
       <div className="maxWidth mx-auto flex justify-between items-center px-4 py-3 md:py-4">
         {/* Logo */}
         <div className="flex items-center">
-          <Image src="/logo.webp" alt="LogicGenX Logo" width={120} height={50} />
+          <Image src="/logo.png" alt=" Liquid Chair Group" width={267} height={68} />
         </div>
 
         {/* Desktop Menu */}
-        <nav className="hidden md:flex space-x-8 font-bold">
-          <Link href="/" className="hover:text-[#0b5c76] uppercase">HOME</Link>
-          <Link href="/about" className="hover:text-[#0b5c76] uppercase">About</Link>
-          <Link href="/services" className="hover:text-[#0b5c76] uppercase">Services</Link>
-          <Link href="/products" className="hover:text-[#0b5c76] uppercase">Products</Link>
-          <Link href="/contact" className="hover:text-[#0b5c76] uppercase">Contact Us</Link>
+        <nav className="hidden md:flex space-x-8 font-normal">
+          <Link href="/" className="text-[#070707] hover:text-[#0b5c76] text-[16px]  ">Home</Link>
+          <Link href="/about" className=" text-[#070707] hover:text-[#0b5c76] text-[16px] ">About</Link>
+          <Link href="/services" className="text-[#070707] hover:text-[#0b5c76] text-[16px] ">Services</Link>
+          <Link href="/products" className="text-[#070707] hover:text-[#0b5c76] text-[16px] ">Products</Link>
+          <Link href="/contact" className="text-[#070707] hover:text-[#0b5c76]  text-[16px]">Contact Us</Link>
         </nav>
+
+        
+          {/* Contact Button - Desktop */}
+
+        <div className="hidden md:block">
+            <a
+              href="#contact"
+              className="bg-[#0978D9] text-[#070707] px-[35px] py-[17px]  hover:bg-blue-700 transition rounded-[12px]"
+            >
+              Contact →
+            </a>
+          </div>
 
         {/* Mobile Hamburger */}
         <div className="md:hidden">
@@ -40,11 +52,11 @@ export default function Navbar() {
           mobileOpen ? 'max-h-96 opacity-100 pt-4 pb-6' : 'max-h-0 opacity-0'
         } font-bold`}
       >
-        <Link href="/" className="block text-[#0b5c76] uppercase mb-2">Home</Link>
-        <Link href="/about" className="block text-[#0b5c76] uppercase mb-2">About</Link>
-        <Link href="/services" className="block hover:text-[#0b5c76] uppercase mb-2">Services</Link>
-        <Link href="/products" className="block hover:text-[#0b5c76] uppercase mb-2">Products</Link>
-        <Link href="/contact" className="block hover:text-[#0b5c76] uppercase">Contact Us</Link>
+        <Link href="/" className="block text-[#070707]  mb-2">Home</Link>                             
+        <Link href="/about" className="block text-[#070707]  mb-2">About</Link>
+        <Link href="/services" className="block text-[#070707] hover:text-[#0b5c76]  mb-2">Services</Link>
+        <Link href="/products" className="block text-[#070707] hover:text-[#0b5c76]  mb-2">Products</Link>
+        <Link href="/contact" className="block text-[#070707] hover:text-[#0b5c76] ">Contact</Link>
       </div>
     </header>
   )
